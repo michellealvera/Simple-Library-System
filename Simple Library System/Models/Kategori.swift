@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct Kategori: Identifiable {
+    var id: Int64
+    var nama: String
+}

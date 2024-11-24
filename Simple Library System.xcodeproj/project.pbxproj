@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C8E31DB72CF2442200942312 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = C8E31DB62CF2442200942312 /* SQLite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C8E31D912CF2398600942312 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,52 @@
 		C8E31D9A2CF2398600942312 /* Simple Library SystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simple Library SystemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C8E31DD52CF25D2800942312 /* Exceptions for "Simple Library System" folder in "Simple Library SystemTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Views/AnggotaView.swift,
+				Views/BukuView.swift,
+				Views/EditAnggotaView.swift,
+				Views/EditBukuView.swift,
+				Views/EditKategoriView.swift,
+				Views/HapusAnggotaView.swift,
+				Views/HapusBukuView.swift,
+				Views/HapusKategoriView.swift,
+				Views/KategoriView.swift,
+				Views/TambahAnggotaView.swift,
+				Views/TambahBukuView.swift,
+				Views/TambahKategoriView.swift,
+			);
+			target = C8E31D8F2CF2398600942312 /* Simple Library SystemTests */;
+		};
+		C8E31DD62CF25D2800942312 /* Exceptions for "Simple Library System" folder in "Simple Library SystemUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Views/AnggotaView.swift,
+				Views/BukuView.swift,
+				Views/EditAnggotaView.swift,
+				Views/EditBukuView.swift,
+				Views/EditKategoriView.swift,
+				Views/HapusAnggotaView.swift,
+				Views/HapusBukuView.swift,
+				Views/HapusKategoriView.swift,
+				Views/KategoriView.swift,
+				Views/TambahAnggotaView.swift,
+				Views/TambahBukuView.swift,
+				Views/TambahKategoriView.swift,
+			);
+			target = C8E31D992CF2398600942312 /* Simple Library SystemUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C8E31D822CF2398400942312 /* Simple Library System */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C8E31DD52CF25D2800942312 /* Exceptions for "Simple Library System" folder in "Simple Library SystemTests" target */,
+				C8E31DD62CF25D2800942312 /* Exceptions for "Simple Library System" folder in "Simple Library SystemUITests" target */,
+			);
 			path = "Simple Library System";
 			sourceTree = "<group>";
 		};
@@ -52,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E31DB72CF2442200942312 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +160,7 @@
 			);
 			name = "Simple Library System";
 			packageProductDependencies = (
+				C8E31DB62CF2442200942312 /* SQLite */,
 			);
 			productName = "Simple Library System";
 			productReference = C8E31D802CF2398400942312 /* Simple Library System.app */;
@@ -195,6 +244,9 @@
 			);
 			mainGroup = C8E31D772CF2398400942312;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C8E31DB52CF2442200942312 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C8E31D812CF2398400942312 /* Products */;
 			projectDirPath = "";
@@ -558,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8E31DB52CF2442200942312 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8E31DB62CF2442200942312 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8E31DB52CF2442200942312 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C8E31D782CF2398400942312 /* Project object */;
 }
